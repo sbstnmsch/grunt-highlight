@@ -47,7 +47,7 @@
           // don't decode html, causes issues when highlighting javascript
           // embedded in html
           var $ = cheerio.load(grunt.file.read(filepath), {
-            decodeEntities: true
+            decodeEntities: false
           });
           $(options.selector).each(function(i, elem) {
             // code to highlight
