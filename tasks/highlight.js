@@ -47,11 +47,11 @@
           // don't decode html, causes issues when highlighting javascript
           // embedded in html
           var $ = cheerio.load(grunt.file.read(filepath), {
-            decodeEntities: false
+            decodeEntities: true
           });
           $(options.selector).each(function(i, elem) {
             // code to highlight
-            var code = $(this).html(), val;
+            var code = $(this).text(), val;
             // lang provided in gruntfile
             if (options.lang) {
               val = hljs.highlight(options.lang, code).value;

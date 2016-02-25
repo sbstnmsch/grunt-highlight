@@ -1,6 +1,6 @@
 {
   "name": "grunt-highlight",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run highlight.js over files",
   "homepage": "https://github.com/james2doyle/grunt-highlight",
   "bugs": "https://github.com/james2doyle/grunt-highlight/issues",
